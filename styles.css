@@ -76,7 +76,6 @@ div.content{
   div.content p {
     margin: 20px 15px 5px;
     font-family: 'Source Sans Pro';
-    color: #FF9491;
     font-size: 16px;
     line-height: 22px;
     text-align: left;
@@ -85,6 +84,14 @@ div.content{
   div.content p.about {
     line-height: 32px;
   }
+
+div.grey{
+  color: #313131;
+}
+
+div.pink{
+  color: #FF9491;
+}
 
 div.photo {
     text-align: center;
@@ -105,7 +112,7 @@ section.graphic-head {
     }
 }
   section.graphic-head img {
-    height: 57px;
+    width: 285px;
   }
 
 p a{
