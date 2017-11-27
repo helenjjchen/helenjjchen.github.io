@@ -43,6 +43,10 @@ nav {
       color: #FF9491;
       text-decoration: none;
     }
+    nav a:visited{
+      color: #FCDCDB;
+      text-decoration: none;
+    }
     nav a#current {
       color: #FF9491;
     }
