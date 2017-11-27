@@ -105,5 +105,13 @@ section.graphic-head {
     }
 }
   section.graphic-head img {
-    width: 285px;
+    height: 57px;
+  }
+
+p a{
+  color: #FF9491;
+  font-weight: bold;
+}
+  p a:hover, nav a:active{
+    color: #FF9491;
   }
