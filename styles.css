@@ -76,6 +76,7 @@ div.content{
   div.content p {
     margin: 20px 15px 5px;
     font-family: 'Source Sans Pro';
+    color: #FF9491;
     font-size: 16px;
     line-height: 22px;
     text-align: left;
@@ -84,14 +85,6 @@ div.content{
   div.content p.about {
     line-height: 32px;
   }
-
-div.grey{
-  color: #313131;
-}
-
-div.pink{
-  color: #FF9491;
-}
 
 div.photo {
     text-align: center;
@@ -117,8 +110,15 @@ section.graphic-head {
 
 p a{
   color: #FF9491;
-  font-weight: bold;
+  font-weight: bolder;
+  text-decoration: underline;
+  letter-spacing: 1px;
 }
-  p a:hover, nav a:active{
+  p a:hover, p a:active{
     color: #FF9491;
+    letter-spacing: 1px;
+  }
+  p a:visited{
+    color: #FF9491;
+    letter-spacing: 1px;
   }
