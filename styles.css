@@ -74,7 +74,7 @@ div.content{
   margin-bottom: 20px;
 }
   div.content p {
-    margin: 20px 15px 5px;
+    margin: 10px 15px 5px;
     font-family: 'Source Sans Pro';
     color: #FF9491;
     font-size: 16px;
@@ -83,6 +83,7 @@ div.content{
     display: inline-block;
   }
   div.content p.about {
+    margin: 10px 15px 15px;
     line-height: 32px;
   }
 
@@ -96,6 +97,7 @@ div.photo {
 
 section.graphic-head {
   margin-top: 30px;
+  margin-bottom: 15px;
   text-align: center;
 }
 @media (min-width: 992px) {
