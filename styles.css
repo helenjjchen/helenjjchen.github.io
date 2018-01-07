@@ -128,7 +128,7 @@ p a{
     letter-spacing: 1px;
     transition: 0.2s;
   }
-  p a:visited{
+  p a:visited, p a:link{
     color: #FF9491;
     text-decoration: none;
     letter-spacing: 1px;
