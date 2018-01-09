@@ -3,7 +3,6 @@ html, body{
 }
 
 /* Navigation */
-
 nav {
   vertical-align: top;
   margin-left: auto;
@@ -64,8 +63,7 @@ nav {
       letter-spacing: 1px;
     }
 
-/* Content */
-
+/* Index */
 div.home {
   margin-top: 45px;
 }
@@ -73,64 +71,82 @@ div.home {
     width: 100%;
   }
 
-div.content{
+/* Content */
+div.content {
   text-align: left;
   margin-bottom: 20px;
 }
-  div.content p {
-    margin: 10px 15px 5px;
-    font-family: 'Source Sans Pro';
-    color: #FF9491;
-    font-size: 16px;
-    line-height: 22px;
-    text-align: left;
-    display: inline-block;
-  }
-  div.content p.lists {
-    margin: 10px 15px 15px;
+
+p {
+  margin: 10px 15px 5px !important;
+  font-family: 'Source Sans Pro';
+  color: #FF9491;
+  font-size: 16px;
+  line-height: 22px;
+  display: inline-block;
+}
+  p.lists {
+    margin: 10px 15px 15px !important;
     line-height: 32px;
     letter-spacing: 1px;
   }
 
-div.photo {
-    text-align: center;
-    padding: 0px 15px 30px;
-}
-  div.photo img {
-      width: 100%;
-  }
-
-section.graphic-head {
-  margin-top: 30px;
-  margin-bottom: 15px;
-  text-align: center;
-}
-@media (min-width: 992px) {
-    section.graphic-head {
-        text-align: left;
-        margin-left: 10px;
-    }
-}
-  section.graphic-head img {
-    width: 285px;
-  }
-
-p a{
+div.content p a{
   color: #FF9491;
   font-weight: bolder;
   text-decoration: none;
   border-bottom: 2px solid #FCDCDB;
   letter-spacing: 1px;
 }
-  p a:hover, p a:active{
+  div.content p a:hover, p a:active{
     color: #FF9491;
     text-decoration: none;
     border-bottom: 2px solid #FF9491;
     letter-spacing: 1px;
     transition: 0.2s;
   }
-  p a:visited, p a:link{
+  div.content p a:visited, p a:link{
     color: #FF9491;
     text-decoration: none;
     letter-spacing: 1px;
   }
+
+/* Graphics */
+  div.photo {
+      text-align: center;
+      padding: 0px 15px 30px;
+  }
+    div.photo img {
+        width: 100%;
+    }
+
+  section.graphic-head {
+    margin-top: 30px;
+    margin-bottom: 15px;
+    text-align: center;
+  }
+  @media (min-width: 992px) {
+      section.graphic-head {
+          text-align: left;
+          margin-left: 10px;
+      }
+  }
+    section.graphic-head img {
+      width: 285px;
+    }
+
+/* Portfolio */
+div.portfolio {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+div.box {
+  height: 300px;
+  width: 100%;
+  align-items: center;
+  border-radius: 10px;
+  background: #FCDCDB;
+  opacity: .35;
+  margin-top: 20px;
+}
