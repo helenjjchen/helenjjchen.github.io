@@ -107,7 +107,7 @@ div.content p a{
     text-decoration: none;
     border-bottom: 2px solid #FF9491;
     letter-spacing: 1px;
-    transition: 0.2s;
+    transition: ease-in-out 0.2s;
   }
   div.content p a:visited, p a:link{
     color: #FF9491;
@@ -148,11 +148,31 @@ div.portfolio {
 div.box {
   height: 300px;
   width: 95%;
-  align-items: center;
-  border-radius: 10px;
-  background: #FCDCDB;
-  opacity: .35;
+  background: rgba(251, 220, 218, 0.4);
+  /*#FCDCDB*/
   margin-top: 20px;
   margin-left: auto;
   margin-right: auto;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  transition: ease-in-out 0.2s;
 }
+div.box:hover{
+  background-color: rgba(251, 220, 218, 0.05);
+  /*#FCDCDB*/
+  transition: ease-in-out 0.2s;
+}
+
+div.box img {
+  max-height: 85%;
+  max-width: 90%;
+  object-fit: contain;
+}
+
+
+/*
+   Light Pink: #FCDCDB
+   Dark Pink: #FF9491
+
+*/
