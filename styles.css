@@ -165,13 +165,20 @@ div.box:hover{
 }
 
 div.box img {
-  max-height: 85%;
+  max-height: 80%;
   max-width: 90%;
   object-fit: contain;
 }
 
+
+div.col-md-4 img{
+  margin-top: 30px;
+  max-width: 100%;
+  object-fit: contain;
+}
 /*
    Light Pink: #FCDCDB
    Dark Pink: #FF9491
+   Grey: #313131
 
 */
