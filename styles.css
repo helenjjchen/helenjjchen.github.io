@@ -40,14 +40,14 @@ nav {
     font-size: 16px;
   }
     nav a:hover, nav a:active {
-      color: #FF9491;
-      text-decoration: none;
+      color: #FF9491 !important;
+      text-decoration: none !important;
       transition: ease-in-out 0.2s;
     }
     nav a:visited a:link {
-      color: #FCDCDB;
-      text-decoration: none;
-      decoration: none;
+      color: #FCDCDB !important;
+      text-decoration: none !important;
+      decoration: none !important;
     }
     nav a#current {
       color: #FF9491;
