@@ -172,15 +172,17 @@ div.box img {
   object-fit: contain;
 }
 
-div.work img {
-  margin-top: 30px;
-  max-width: 100%;
-  object-fit: contain;
+div.head img {
+  width: 100%;
 }
+  @media (min-width: 992px) {
+    div.head img {
+      width: 75%;
+    }
+  }
 
-div.container hr {
-  border-width: 3px;
-  border-color: #cccccc;
+div.gallery img {
+  margin-top: 30px;
 }
 
 /*
