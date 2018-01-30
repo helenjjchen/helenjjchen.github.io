@@ -32,9 +32,150 @@
       </div>
     </div>
     <div class="row">
+      <div class="col-md-6 content">
+        <p>
+          <a href="http://www.tedxuchicago.com/">TEDxUChicago</a> &nbsp; is a student organized, independently hosted TEDx event, licensed by TED. Our upcoming conference <i>Look Again!</i> will be held in May 2018.
+          <br><br>
+          As Creative Design Chair for the 2017 conference <i>Changing Channels</i>, I had the opportunity to create all of the branding and print designs for the conference.
+          This included:
+        </p>
+        <p class="lists">
+          • &nbsp; Lanyards for speakers, board members<br>
+          • &nbsp; T-shirts<br>
+          • &nbsp; Conference Program<br>
+          • &nbsp; Social media banners, promos<br>
+          • &nbsp; Flyers<br>
+          • &nbsp; Event geofilter
+        </p>
+        <br>
+        <p>
+          From start to finish, I had less than six weeks to complete all of the designs so that they could be printed by the conference date. This was a much shorter amount of time than usually alotted to the Design Chair because I was only brought on board mid March.
+          <br><br>
+          Because of this time crunch, there are some inconsistencies in design due to changes I made after already submitting things to the printing company.
+          <br><br>
+          The lanyards for the conference were the first designs to be submitted, done within a week and a half of being on board. I realized that white was too drastics of a contrast and black was too dark for the background, leading to the shades of grey found in all the later designs.
+          I also found that having three partial bars instead of two that spanned across the entire page made designing easier and more interesting, particularly when it came to layout for the conference program.
+        </p>
+      </div>
+      <br>
+      <div class="col-md-3 photo">
+        <img src="../img/work/tedx/tedx1.png" style="max-width:300px;"><br>
+        <p style="font-size: 14px;"> Early drafts in Illustrator </p>
+      </div>
+      <div class="col-md-3 photo">
+        <img src="../img/work/tedx/helen.jpg" style="max-width:300px;"><br>
+        <p style="font-size: 14px;"> Board promos </p>
+        <br><br>
+        <img src="../img/work/tedx/lanyard.png" style="margin-bottom:-12px; max-width:300px;"><br>
+        <p style="font-size: 14px;"> Board Lanyards </p>
+      </div>
     </div>
    </div>
-  <nav>
+<div class="container c" style="margin-top:30px;">
+  <div class="slide">
+    <div class="mySlides">
+      <img src="../img/work/tedx/program1.png" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <img src="../img/work/tedx/program2.png" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <img src="../img/work/tedx/program3.png" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <img src="../img/work/tedx/program4.png" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <img src="../img/work/tedx/program5.png" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <img src="../img/work/tedx/program6.png" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <img src="../img/work/tedx/program7.png" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <img src="../img/work/tedx/program8.png" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <img src="../img/work/tedx/program9.png" style="width:100%">
+    </div>
+
+
+    <a class="prev" onclick="plusSlides(-1)">❮</a>
+    <a class="next" onclick="plusSlides(1)">❯</a>
+  <br>
+    <div class="row">
+      <div class="column">
+        <img class="demo" src="../img/work/tedx/program1.png" style="width:100%" onclick="currentSlide(1)">
+      </div>
+      <div class="column">
+        <img class="demo" src="../img/work/tedx/program2.png" style="width:100%" onclick="currentSlide(2)">
+      </div>
+      <div class="column">
+        <img class="demo" src="../img/work/tedx/program3.png" style="width:100%" onclick="currentSlide(3)">
+      </div>
+      <div class="column">
+        <img class="demo" src="../img/work/tedx/program4.png" style="width:100%" onclick="currentSlide(4)">
+      </div>
+      <div class="column">
+        <img class="demo" src="../img/work/tedx/program5.png" style="width:100%" onclick="currentSlide(5)">
+      </div>
+      <div class="column">
+        <img class="demo" src="../img/work/tedx/program6.png" style="width:100%" onclick="currentSlide(6)">
+      </div>
+      <div class="column">
+        <img class="demo" src="../img/work/tedx/program7.png" style="width:100%" onclick="currentSlide(7)">
+      </div>
+      <div class="column">
+        <img class="demo" src="../img/work/tedx/program8.png" style="width:100%" onclick="currentSlide(8)">
+      </div>
+      <div class="column">
+        <img class="demo" src="../img/work/tedx/program9.png" style="width:100%" onclick="currentSlide(9)">
+      </div>
+    </div>
+  </div>
+</div>
+
+<script>
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("demo");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+  captionText.innerHTML = dots[slideIndex-1].alt;
+}
+</script>
+<br>
+  <nav style="margin-top: 30px;">
     <ul style="margin-bottom: 30px;">
       <li><a href="celential.html">Celential.ai</a></li>
       <li><a id="current" href="tedx.html">TEDxUChicago</a></li>

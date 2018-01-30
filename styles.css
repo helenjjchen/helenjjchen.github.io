@@ -185,6 +185,99 @@ div.gallery img {
   margin-top: 30px;
 }
 
+div.col-sm-4 img{
+  max-width:500px;
+}
+
+/* Slideshow */
+.mySlides img {
+  vertical-align: middle;
+}
+
+/* Position the image container (needed to position the left and right arrows) */
+.c {
+  position: relative;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 45%;
+  width: auto;
+  padding: 16px;
+  margin-top: -50px;
+  color: #58585a;
+  font-weight: bold;
+  font-size: 20px;
+  background-color: rgba(255, 255, 255, 0.4);
+  text-decoration: none;
+}
+
+/* Position the "next button" to the right */
+.prev {
+  left: 0;
+  border-radius: 3px 0 0 3px;
+}
+@media (min-width: 768px) {
+  .prev {
+    left: 15%;
+  }
+}
+
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+@media (min-width: 768px) {
+  .next {
+    right: 15%;
+  }
+}
+
+.prev:hover, .next:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+  color: #58585a;
+  text-decoration: none;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* 8 columns side by side */
+.column {
+  float: left;
+  width: 11.11%;
+}
+
+/* Add a transparency effect for thumnbail images */
+.demo {
+  opacity: 0.6;
+  cursor: pointer;
+}
+
+.active, .demo:hover {
+  opacity: 1;
+}
+
+div.slide {
+  max-width: 100%;
+}
+  @media (min-width: 768px) {
+    div.slide {
+      margin-left: 20%;
+      margin-right: 20%;
+    }
+  }
+
 /*
    Light Pink: #FCDCDB
    Dark Pink: #FF9491
