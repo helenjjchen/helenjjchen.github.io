@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title> Helen Chen </title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1.0, maximum-scale=1.0">
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+  <link rel="icon" href="../favicon.ico" type="image/x-icon">
+  <link href="..\styles.css" rel="stylesheet">
+  <link href="..\bootstrap.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro" rel="stylesheet">
+
+</head>
+
+<body>
+  <nav>
+    <a href="..\index.html">
+      <div class="cloud"></div>
+    </a>
+    <ul>
+        <li><a href="..\about.html">ABOUT</a></li>
+        <li><a id="current" href="..\work.html">WORK</a></li>
+        <li><a href="..\resume.pdf" target="_blank">RESUME</a></li>
+        <!-- <li><a href="..\blog.html">MUSINGS</a></li> -->
+        <li><a href="..\contact.html">CONTACT</a></li>
+    </ul>
+  </nav>
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-12">
+        <section class="graphic-head"><img src="../img/work/doordash.png"></section>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-6 content">
+        <p>
+          This is my redesign in response to KPCB's 2018 Design Fellow design challenge.
+          You can find my write-up on&nbsp; <a href="https://medium.com/@helenjoychen/redesigning-doordash-cc119dd866a1">&nbsp;Medium </a>.
+        </p>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-sm-12 photo gallery">
+        <img src="../img/work/doordash/icons.png" style="max-width:800px; margin-bottom:30px;">
+      </div>
+    </div>
+  </div>
+
+  <div class="container c" style="margin-top:30px;">
+    <div class="slide1">
+      <div class="mySlides">
+        <img src="../img/work/doordash/1.png" style="width:100%">
+      </div>
+
+      <div class="mySlides">
+        <img src="../img/work/doordash/2.png" style="width:100%">
+      </div>
+
+      <div class="mySlides">
+        <img src="../img/work/doordash/3.png" style="width:100%">
+      </div>
+
+      <div class="mySlides">
+        <img src="../img/work/doordash/4.png" style="width:100%">
+      </div>
+
+      <div class="mySlides">
+        <img src="../img/work/doordash/5.png" style="width:100%">
+      </div>
+
+      <div class="mySlides">
+        <img src="../img/work/doordash/7.png" style="width:100%">
+      </div>
+
+      <div class="mySlides">
+        <img src="../img/work/doordash/8.png" style="width:100%">
+      </div>
+
+      <div class="mySlides">
+        <img src="../img/work/doordash/9.png" style="width:100%">
+      </div>
+      <div class="mySlides">
+        <img src="../img/work/doordash/10.png" style="width:100%">
+      </div>
+
+      <div class="mySlides">
+        <img src="../img/work/doordash/11.png" style="width:100%">
+      </div>
+
+
+      <a class="prev" onclick="plusSlides(-1)">❮</a>
+      <a class="next" onclick="plusSlides(1)">❯</a>
+    <br>
+      <div class="row">
+        <div class="column1">
+          <img class="demo" src="../img/work/doordash/1.png" style="width:100%" onclick="currentSlide(1)">
+        </div>
+        <div class="column1">
+          <img class="demo" src="../img/work/doordash/2.png" style="width:100%" onclick="currentSlide(2)">
+        </div>
+        <div class="column1">
+          <img class="demo" src="../img/work/doordash/3.png" style="width:100%" onclick="currentSlide(3)">
+        </div>
+        <div class="column1">
+          <img class="demo" src="../img/work/doordash/4.png" style="width:100%" onclick="currentSlide(4)">
+        </div>
+        <div class="column1">
+          <img class="demo" src="../img/work/doordash/5.png" style="width:100%" onclick="currentSlide(5)">
+        </div>
+        <div class="column1">
+          <img class="demo" src="../img/work/doordash/7.png" style="width:100%" onclick="currentSlide(7)">
+        </div>
+        <div class="column1">
+          <img class="demo" src="../img/work/doordash/8.png" style="width:100%" onclick="currentSlide(8)">
+        </div>
+        <div class="column1">
+          <img class="demo" src="../img/work/doordash/9.png" style="width:100%" onclick="currentSlide(9)">
+        </div>
+        <div class="column1">
+          <img class="demo" src="../img/work/doordash/10.png" style="width:100%" onclick="currentSlide(8)">
+        </div>
+        <div class="column1">
+          <img class="demo" src="../img/work/doordash/11.png" style="width:100%" onclick="currentSlide(9)">
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script>
+  var slideIndex = 1;
+  showSlides(slideIndex);
+
+  function plusSlides(n) {
+    showSlides(slideIndex += n);
+  }
+
+  function currentSlide(n) {
+    showSlides(slideIndex = n);
+  }
+
+  function showSlides(n) {
+    var i;
+    var slides = document.getElementsByClassName("mySlides");
+    var dots = document.getElementsByClassName("demo");
+    if (n > slides.length) {slideIndex = 1}
+    if (n < 1) {slideIndex = slides.length}
+    for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+    }
+    for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+    }
+    slides[slideIndex-1].style.display = "block";
+    dots[slideIndex-1].className += " active";
+    captionText.innerHTML = dots[slideIndex-1].alt;
+  }
+  </script>
+  <br>
+  <nav style="margin-top: 30px;">
+    <ul style="margin-bottom: 30px;">
+      <li><a id="current" href="doordash.html">DoorDash</a></li>
+      <li><a href="tedx.html">TEDxUChicago</a></li>
+      <li><a href="falcon.html">Saratoga Falcon</a></li>
+      <li><a href="logos.html">Logos</a></li>
+      <li><a href="infographics.html">Infographics</a></li>
+      <li><a href="graphics.html">Graphics</a></li>
+    </ul>
+  </nav>
+</body>
+</html>
