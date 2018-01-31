@@ -80,7 +80,8 @@ div.content {
 p {
   margin: 10px 15px 5px !important;
   font-family: 'Source Sans Pro';
-  color: #FF9491;
+  /*color: #FF9491;*/
+  color: #58585a;
   font-size: 16px;
   line-height: 22px;
   display: inline-block;
@@ -90,27 +91,36 @@ p {
     line-height: 32px;
     letter-spacing: 1px;
   }
+  p.caption {
+    color: #FF9491;
+    font-size: 14px;
+  }
 
 span {
   letter-spacing: 1px;
 }
 
 div.content p a{
-  color: #FF9491;
-  font-weight: bolder;
+  /*color: #FF9491;*/
+  color: #58585a;
+  /*font-weight: bolder;*/
   text-decoration: none;
-  border-bottom: 2px solid #FCDCDB;
+  border-bottom: 2px solid #FF9491;
+  /*box-shadow: inset 0 -4px 0 #FF9491;*/
   letter-spacing: 1px;
 }
   div.content p a:hover, p a:active{
-    color: #FF9491;
+    /*color: #FF9491;*/
+    background-color: #FCDCDB;
     text-decoration: none;
-    border-bottom: 2px solid #FF9491;
+    border-bottom: 2px solid #FCDCDB;
+    /*box-shadow: inset 0 -4px 0 #FCDCDB;*/
     letter-spacing: 1px;
     transition: ease-in-out 0.2s;
   }
   div.content p a:visited, p a:link{
-    color: #FF9491;
+    /*color: #FF9491;*/
+    color: #58585a;
     text-decoration: none;
     letter-spacing: 1px;
   }
@@ -150,7 +160,7 @@ div.portfolio {
 div.box {
   height: 300px;
   width: 95%;
-  background: rgba(251, 220, 218, 0.4);
+  background: #F4F4F4;
   /*#FCDCDB*/
   margin-top: 20px;
   margin-left: auto;
@@ -161,7 +171,7 @@ div.box {
   transition: ease-in-out 0.2s;
 }
 div.box:hover{
-  background-color: rgba(251, 220, 218, 0.05);
+  background-color: #FCFCFC;
   /*#FCDCDB*/
   transition: ease-in-out 0.2s;
 }
@@ -281,6 +291,7 @@ div.slide {
 /*
    Light Pink: #FCDCDB
    Dark Pink: #FF9491
-   Grey: #58585a
+   Dark Grey: #58585a
+   Grey:
 
 */
